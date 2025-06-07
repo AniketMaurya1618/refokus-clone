@@ -46,7 +46,7 @@ function Products() {
     {videos.map((vid, index) => (
       <div className="w-full h-full flex items-center justify-center">
   <video
-    className="max-w-full max-h-full object-cover"
+    className={`h-[23rem] rounded-md object-cover ${index===index ? "block" : "hidden"}`}
     src={vid}
     autoPlay
     muted
